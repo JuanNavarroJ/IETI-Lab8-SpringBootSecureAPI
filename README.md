@@ -1,14 +1,16 @@
 # IETI-Lab8-Spring Boot Secure API
 
-## Frontend
-
-## Backend
-
 ## Credenciales
 
 usuario: juan@mail.com
 
 clave: juan
+
+## Frontend
+https://github.com/JuanNavarroJ/IETI-Lab8-SpringBootSecureAPI/tree/master/Frontend
+
+## Backend
+https://github.com/JuanNavarroJ/IETI-Lab8-SpringBootSecureAPI/tree/master/Backend
 
 ## Código de Honor
 
