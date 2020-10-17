@@ -17,7 +17,7 @@ public class UserServiceImpl
     implements UserService
 {
 
-    private List<User> users = new ArrayList<>();
+    private static List<User> users = new ArrayList<>();
 
 
     @Autowired
@@ -29,6 +29,7 @@ public class UserServiceImpl
     private void populateSampleData()
     {
         users.add( new User( "test@mail.com", "password", "Andres", "Perez" ) );
+        users.add( new User( "juan@mail.com", "juan", "Juan", "Navarro" ) );
     }
 
 
@@ -39,9 +40,15 @@ public class UserServiceImpl
     }
 
     @Override
-    public User getUser( Long id )
+    public User getUser( String email, String password )
     {
-        return users.get( 0 );
+        User ans = null;
+        for(User us: users){
+            if(us.getEmail().equals(email) && us.getPassword().equals(password)){
+                ans = us;
+            }
+        }
+        return ans;
     }
 
     @Override

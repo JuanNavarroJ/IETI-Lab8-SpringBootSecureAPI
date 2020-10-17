@@ -12,7 +12,7 @@ public interface UserService
 {
     List<User> getUsers();
 
-    User getUser( Long id );
+    User getUser( String email, String password);
 
     User createUser( User user );
 
